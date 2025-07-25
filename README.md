@@ -1,2 +1,2 @@
 # note-copy
-note ทืีมี copy ในตัว
+note ที่มี copy ในตัว

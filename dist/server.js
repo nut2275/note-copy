@@ -20,12 +20,14 @@ app.use(express_1.default.json());
 // ✅ API Routes
 // app.use("/api/users", userRoutes);
 app.use("/appNotes", note_routes_1.default);
+
 // ✅ 2) Serve React Build
 // ✅ ชี้ไป build folder ถูกต้อง
-const buildPath = path_1.default.join(__dirname, "../build");
-console.log("Serving React build from:", buildPath);
-app.use(express_1.default.static(buildPath));
-app.get("/*", (_, res) => {
-    res.sendFile(path_1.default.join(buildPath, "index.html"));
-});
+// const buildPath = path_1.default.join(__dirname, "../build");
+// console.log("Serving React build from:", buildPath);
+// app.use(express_1.default.static(buildPath));
+// app.get("/*", (_, res) => {
+//     res.sendFile(path_1.default.join(buildPath, "index.html"));
+// });
+
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
